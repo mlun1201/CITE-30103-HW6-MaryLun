@@ -1,0 +1,9 @@
+int 1value = 10;
+float avg-rate = 12.5;
+char Class = 'A';
+
+The names assigned violate naming conventions. Names must begin with a letter or underscore so 1value is invalid, and they can only have letters, digits, or underscores only so avg-rate is invalid. An example of valid names would be:
+
+int value1 = 10;
+float avg_rate = 12.5;
+char Class = 'A';
