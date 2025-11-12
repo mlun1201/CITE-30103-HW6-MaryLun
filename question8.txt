@@ -1,0 +1,1 @@
+int a was declared outside of main() so it is a global variable while int b was declared within main() so it is a local variable. This means that a can be accessed and modified by the entire program while b can only be accessed and modified within main().
