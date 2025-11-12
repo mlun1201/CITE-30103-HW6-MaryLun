@@ -1,8 +1,7 @@
 The process of a C program moving from source code to execution:
  
-1. Preprocessor program processes the code. Missing the #include can cause an error at this stage.
-2. Compiler creates object code and stores it on disk. Syntax errors can cause compiler error.
-3. The assembler converts the assembly language into object code, producing a file such as a.o. A function that has been declared but not defined can cause error.  
-4. Linker links the object code with the libraries, creates an executable file a.out and stores it on disk. Error can occur if the correct library path isn't provided, preventing the linker from finding required functions. 
-5. Loader puts program in memory and CPU takes each instruction and executes it, possibly storing new data values as the program executes. The program attempting to access a memory location that it's not allowed to can lead to runtime error.
-
+1. Preprocessor program processes the code. A missing or incorrect include file leads to fatal error: ____: No such file or directory compilation terminated.
+2. Compiler creates object code and stores it on disk. Error occurs when compiler can't parse syntax errors, resulting in something like error: expected a ";" on ____.
+3. The assembler converts the assembly language into object code producing a file such as a.o. Syntax errors provide invalid assembly instructors, causing Error: junk at end of line, first unrecognized character _____.
+4. Linker links the object code with the libraries, creates an executable file a.out and stores it on disk. When a function is not defined it leads to an undefined reference to '____' error.
+5. Loader puts program in memory and CPU takes each instruction and executes it, possibly storing new data values as the program executes. Can fail due to lack of memory or invalid addresses, causing Segmentation fault (core dumped) error.

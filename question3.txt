@@ -1,0 +1,1 @@
+Removing #include <stdio.h> from a program that calls printf will result in an error message during compilation that warns the user that printf has been implicitly declared.
